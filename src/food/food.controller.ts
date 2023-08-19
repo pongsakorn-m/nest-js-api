@@ -13,7 +13,6 @@ export class FoodController {
 
     @Get('search')
     getFoodsByCondition(@Query('keyword') keyword: string) {
-        console.log(keyword)
         return this.foodService.getFoodsByCondition(keyword);
     }
 
